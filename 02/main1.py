@@ -1,10 +1,12 @@
 import re
 
+
 def openInput(day, puzzle):
     with open('./{}/input{}.txt'.format(day, puzzle), 'r') as file:
         data = file.read()
         splitData = data.splitlines()
         return splitData
+
 
 def checkPassword(password):
     res = re.search(r'(\d{1,2})-(\d{1,2}) ([a-z]): ([a-z]+)', password)
