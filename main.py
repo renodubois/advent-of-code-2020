@@ -1,13 +1,20 @@
-def openInput(day, puzzle):
-    with open('./{}/input{}.txt'.format(day, puzzle), 'r') as file:
+def openInput(day):
+    with open('./{}/input.txt'.format(day), 'r') as file:
         data = file.read()
         splitData = data.splitlines()
         return splitData
 
 
+def puzzle1(input):
+    pass
+
+
+def puzzle2(input):
+    pass
+
+
 if __name__ == "__main__":
     # TODO: set day
     day = "01"
-    puzzle = 1
-    input = openInput(day, puzzle)
+    input = openInput(day)
     pass
